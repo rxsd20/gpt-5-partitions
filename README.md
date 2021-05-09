@@ -2,7 +2,7 @@
 Check 5 partitions and 10 raid
 ==============
 ## Descriptions
-This vagrant creates a vm, installs the necessary packages to complete the job, builds 10 raids, creates a gpt partition and 5 partitions. 
+This vagrant creates a vm, installs the necessary packages to complete the job, builds 10 raids, creates a gpt partition and 5 partitions. Create and boot Libvirt domains.
 
 ## Setup and run
 * **Step 1**: Using Command Terminal, download and install: ```git clone https://github.com/rxsd20/gpt-5-partitions.git```
