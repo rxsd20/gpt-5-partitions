@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
     v.storage :file, :size => '2G', :bus => 'virtio', :type => 'qcow2'
     v.storage :file, :size => '2G', :bus => 'virtio', :type => 'qcow2'
     v.storage :file, :size => '2G', :bus => 'virtio', :type => 'qcow2'
+    v.storage :file, :size => '2G', :bus => 'virtio', :type => 'qcow2'
   end
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "gpt-5partitions.yml"

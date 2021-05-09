@@ -1,8 +1,0 @@
----
-  - hosts: all
-    become: true
-    roles:
-      - update-install
-      - mdadm
-      - reboot
-      - parted
