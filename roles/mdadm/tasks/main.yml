@@ -1,0 +1,6 @@
+---
+  - name: clear dev
+    shell: wipefs -a /dev/vd[b-f]
+
+  - name: assembly raid
+    shell: mdadm --create /dev/md0 --level=10 --raid-devices=5 /dev/vd[b-f]

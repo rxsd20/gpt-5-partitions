@@ -1,0 +1,15 @@
+---
+#  - parted:
+#      device: /dev/md0
+#      number: 1
+#      state: present
+#      label: gpt
+#      part_end: 200MiB
+#
+  - name: Create a new primary partition
+    community.general.parted:
+      device: /dev/md0
+      number: 3
+      state: present
+      fs_type: ext4
+      part_start: -200MiB

@@ -1,0 +1,2 @@
+[ipa]
+ipa ansible_host=192.168.121.239 ansible_user=vagrant ansible_python_interpreter=/usr/bin/python3

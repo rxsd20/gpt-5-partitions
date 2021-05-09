@@ -1,0 +1,19 @@
+---
+    - name: Update & upgrade by apt
+      apt:
+        update_cache: yes
+        upgrade: yes
+    - name: install parted
+      apt:
+        name: parted
+    - name: install mdadm
+      apt:
+        name: mdadm
+    - name: reboot
+      command: nohup bash -c "sleep 2s && reboot" &
+      async: 1
+      poll: 0
+      ignore_errors: true
+    - name: wait for system online
+      wait_for_connection:
+        delay: 15
