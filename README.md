@@ -1,17 +1,17 @@
 
-Check kernel VM
+This vagrant creates a vm, installs the necessary packages to complete the job, builds 10 raids, creates a gpt partition and 5 partitions. 
 ==============
 
 ## Setup and run
-* **Step 1**: Using Command Terminal, download and install: ```git clone https://github.com/rxsd20/manual_kernel_update.git```
+* **Step 1**: Using Command Terminal, download and install: ```git clone https://github.com/rxsd20/gpt-5-partitions.git```
 
-* **Step 2**: Go to the directory with command: ```cd manual_kernel_update```
+* **Step 2**: Go to the directory with command: ```cd gpt-5-partitions```
 
 * **Step 3**: Run the command: ```vagrant up```
 
 * **Step 4**: Go in VM command: ```vagrant ssh```
 
-* **Step 5**: Enter command: ```uname -r```
+* **Step 5**: Enter command: ```lsblk```
 
 * **Step 6**: Exit VM: ```exit```
 
